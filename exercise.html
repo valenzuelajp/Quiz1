@@ -28,8 +28,10 @@
         <ol>
             <li>Delivery date filter for an application, that cannot select previous date past today's date.</li>
             <!--ANWER HERE-->
-            <input type="date" min="2023-09-16" max="2023-09-30">
-            <form action="/action_submit.php"><input type="submit"></form>
+            <form action="">
+                <input type="date" min="2023-09-16" max="2023-09-30">
+            <input type="submit" value="Submit">
+            </form>
             <!--END ANWER HERE-->
 
             <li>An input field used to select ONE item from the Southeast Asian nations, with Philippines as initially selected record: (follow the order of nations below)</li>
@@ -47,7 +49,8 @@
                         <li>Vietname</li>
                     </ul>
             <!--ANWER HERE--> 
-            <label for="country">SELECT ONE item from the Southeast Asian nations:</label>
+            <form action="">
+                <label for="country">SELECT ONE item from the Southeast Asian nations:</label>
             <select name="country" id="country">
                 <option value="Burma">Burma</option>
                 <option value="Brunei">Brunei</option>
@@ -62,7 +65,7 @@
                 <option value="Vietname">Vietname</option>
                 <form action="/action_submit.php"><input type="submit"></form>
             </select>
-            
+            </form>
             <!--END ANWER HERE-->
 
             <li>An input field for ingredients that can select one or more from the list:</li>
@@ -106,12 +109,13 @@
             <li>An input field to select whether a user is an administrator or not? (Boolean)</li>    
             <!--ANWER HERE--> 
 
-            <form>
-            <label for="isAdmin">Are you an administrator?</label>
+<form action="">
+    <label for="isAdmin">Are you an administrator?</label>
             <input type="checkbox" id="isAdmin" name="isAdmin">
 
             <input type="submit" value="Submit">
-            </form>
+</form>
+
 
             <!--END ANWER HERE-->  
 
