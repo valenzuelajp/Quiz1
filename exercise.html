@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<body>
+    <header>
+        <h1>Quiz</h1>
+    </header>
+    
+        
+    <section id="forms-related">
+        <h3>Rules: Create the necessary html elements that best fit for the following scenario. 3pts each, observe proper naming convention</h3>
+        <ul>
+            <li>Check each cases carefully.</li>
+            <li>Using the given condition on each cases, you are to create a <strong>label and an input field</strong> that could best fit the required condition for each cases.</li>
+            <li>Wrap your selected input field in <strong>form element</strong> and it must have a <strong>submit button</strong> each cases.</li>
+            <li>A score of 3pts for correct representation of input fields, along with a working submit button and a backend action that holds user input data when checked in inspect element.</li>
+            <li>A score of 1pt for correct representation of input fields, without a working action attribute.</li>
+            <li>A score of 2pt for correct representation of input fields, a working action attribute but non standard naming of payload and/or no semantic label for fields.</li>
+            
+        </ul>
+            
+        <hr>        
+        
+        <ol>
+            <li>Delivery date filter for an application, that cannot select previous date past today's date.</li>
+            <!--ANWER HERE-->
+            <input type="date" min="2023-09-16" max="2023-09-30">
+            <form action="/action_submit.php"><input type="submit"></form>
+            <!--END ANWER HERE-->
+
+            <li>An input field used to select ONE item from the Southeast Asian nations, with Philippines as initially selected record: (follow the order of nations below)</li>
+                    <ul>
+                        <li>Burma</li>
+                        <li>Brunei</li>
+                        <li>Cambodia</li>
+                        <li>Indonesia</li>
+                        <li>Laos</li>
+                        <li>Malaysia</li>
+                        <li>Philippines</li>
+                        <li>Singapore</li>
+                        <li>Thailand</li>
+                        <li>Timor-Leste</li>
+                        <li>Vietname</li>
+                    </ul>
+            <!--ANWER HERE--> 
+            <label for="country">SELECT ONE item from the Southeast Asian nations:</label>
+            <select name="country" id="country">
+                <option value="Burma">Burma</option>
+                <option value="Brunei">Brunei</option>
+                <option value="Cambodias">Cambodia</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Laos">Laos</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Timor-Leste">Timor-Leste</option>
+                <option value="Vietname">Vietname</option>
+                <form action="/action_submit.php"><input type="submit"></form>
+            </select>
+            
+            <!--END ANWER HERE-->
+
+            <li>An input field for ingredients that can select one or more from the list:</li>
+                <ul>
+                    <li>Fresh Celery</li>
+                    <li>Skim Milk</li>
+                    <li>Turkey Celery</li>
+                    <li>Butter</li>
+                    <li>Carrots</li>
+                    <li>Onion</li>
+                </ul>
+            <!--ANWER HERE--> 
+            <form action="">
+            <input type="checkbox" id="ingredients1" name="ingredients1" value="ingredients">
+            <label for="ingredients1"> Fresh Celery
+            </label>
+            <br>
+            <input type="checkbox" id="ingredients2" name="ingredients2" value="ingredients2">
+            <label for="ingredients2">Skim Milk
+            </label>
+            <br>
+            <input type="checkbox" id="ingredients3" name="ingredients3" value="ingredients3">
+            <label for="ingredients3">Turkey Celery
+            </label>
+            <br>
+            <input type="checkbox" id="ingredients3" name="ingredients3" value="ingredients3">
+            <label for="ingredients3">Butter
+            </label>
+            <br>
+            <input type="checkbox" id="ingredients3" name="ingredients3" value="ingredients3">
+            <label for="ingredients3">Carrots
+            </label>
+            <br>
+            <input type="checkbox" id="ingredients3" name="ingredients3" value="ingredients3">
+            <label for="ingredients3">Onion
+            </label>
+        </form>
+            <input type="submit">
+            <!--END ANWER HERE--> 
+
+            <li>An input field to select whether a user is an administrator or not? (Boolean)</li>    
+            <!--ANWER HERE--> 
+
+            <form>
+            <label for="isAdmin">Are you an administrator?</label>
+            <input type="checkbox" id="isAdmin" name="isAdmin">
+
+            <input type="submit" value="Submit">
+            </form>
+
+            <!--END ANWER HERE-->  
+
+            <li>An input field to upload one or more audio related files(like mp3, wav, ogg, m4a)</li>
+            <!--ANWER HERE--> 
+
+            <form action="/action_submit.php">
+                <input type="file" accept= "audio/*"/>
+                <input type="submit">
+            </form>
+            
+            <!--END ANWER HERE-->    
+                
+
+        </ol>
+    </section>
+
+    <section id="table-related">
+        
+        <h3>Rules:Create the table as depicted in the image below. Use correct semantic elements. 15pts</h3>
+        <ul>
+            <li>Create an html table based on the provided image below</li>
+            <li>Observe the number of columns and rows in the table</li>
+            <li>Use appropriate semantic tags for table header and body</li>
+            <li>A score of 15pts for correct visual output of table as the image below(css coloring has no factor)</li>
+            <li>A deduction of 2 points each wrong merging of rows/columns. Maximum deduction of 10points </li>
+        </ul>
+
+        <hr>
+        
+        <img src="./excel.png" alt="table-of-schedules" width="300" >
+        
+        <p>Use the base code below for basic styling. You may use css if you know it</p>
+        <table style="border-collapse: collapse;">
+            <tr style="border: 1px solid black;">
+                <td style="border: 1px solid black;">data</td>
+                <td style="border: 1px solid black;">data</td>
+            </tr>
+        </table>
+        <!--ANWER HERE--> 
+        <table>s
+            <thead>
+                <tr>
+                    <tr style="border: 1px solid black;">
+                        <td style="border: 2px solid black;">Time</td>
+                        <td style="border: 2px solid black;">Monday</td>
+                        <td style="border: 2px solid black;">Tuesday</td>
+                        <td style="border: 2px solid black;">Wednesday</td>
+                        <td style="border: 2px solid black;">Thursday</td>
+                        <td style="border: 2px solid black;">Friday</td>
+                        <td style="border: 2px solid black;">Saturday</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>7:00-7:30</td>
+                    <tr></tr>
+                    <td>7:30-8:00</td>
+                    <tr></tr>
+                    <td>8:00-8:30</td>
+                    <tr></tr>
+                    <td>8:30-9:00</td>
+                    <tr></tr>
+                    <td>9:00-9:30</td>
+                    <tr></tr>
+                    <td>9:30-10:00</td>
+                    <tr></tr>
+                    <td>10:00-10:30</td>
+                    <tr></tr>
+                    <td>10:30-11:00</td>
+                    <tr></tr>
+                    <td>11:00-11:30</td>
+                    <tr></tr>
+                    <td>11:30-12:00</td>
+                    <tr></tr>
+                    <td>12:00-12:30</td>
+                    <tr></tr>
+                    <td>12:30-13:00</td>
+                    <tr></tr>
+                    <td>13:00-13:30</td>
+                    <tr></tr>
+                    <td>13:30-14:00</td>
+                    <tr></tr>
+                    <td>14:00-14:30</td>
+                    <tr></tr>
+                    <td>14:30-15:00</td>
+                    <tr></tr>
+                    <td>15:00-15:30</td>
+                    <tr></tr>
+                    <td>15:30-16:00</td>
+                    <tr></tr>
+                    <td>16:00-16:30</td>
+                    <tr></tr>
+                    <td>16:30-17:00</td>
+                    <tr></tr>
+                    <td>17:00-17:30</td>
+                    <tr></tr>
+                    <td>17:30-18:00</td>
+                    <tr></tr>
+                    <td>18:00-18:30</td>
+                    <tr></tr>
+                    <td>18:30-19:00</td>
+                </tr>
+            </tbody>
+        </table>
+        <!--END ANWER HERE--
+    </section>
+    
+</body>
+</html>
